@@ -1,0 +1,6 @@
+INFO:root:Start of code block for getting the list of files names in the daily folder in download folder
+INFO:root:There is an error:
+[WinError 3] The system cannot find the path specified: 'J:\\'
+INFO:root:Preparing to send error email
+INFO:root:Error email sent
+INFO:root:This is the finally clause.

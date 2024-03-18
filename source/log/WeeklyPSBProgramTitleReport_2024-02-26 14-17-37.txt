@@ -1,0 +1,38 @@
+INFO:root:Start of code block for getting the list of files names in the daily folder in download folder
+INFO:root:Max date found in downloads folder: 2024-02-26
+INFO:root:Getting a list of files in the latest daily folder
+INFO:root:['F240223B.TXT']
+INFO:root:Checking if the F file is available in the latest daily folder.
+If it is not available it will raise exception and send out warning email.
+INFO:root:F file is available, continuing the process.
+INFO:root:Getting a list of F files and sort them from latest to oldest version
+INFO:root:Available F files today: ['F240223B.TXT']
+INFO:root:Latest F prelog file: F240223B.TXT
+INFO:root:Copy the latest F file F240223B.TXT to local drive
+INFO:root:Copied F240223B.TXT to D:/SGTAM_DP/Working Project/Weekly OIP PSB Program Title Report/prelogFiles
+INFO:root:Creating SQL connection to SGTAMProdOIP
+INFO:root:Executing query to check if there are any records that have the same file_name and import_date as today import
+INFO:root:No records found with file_name=F240223B and import_date=2024-02-26.
+ Proceeding to insert the data.
+INFO:root:SQL connection closed.
+INFO:root:Create new Sparks session
+INFO:root:Creating PySpark dataframe from the F file F240223B.TXT
+INFO:root:PySpark dataframe created.
+INFO:root:
+Dataframe has 8876 rows, please cross check with the data file
+INFO:root:F240223B.TXT has 8876 rows of non-empty lines
+
+INFO:root:Importing the dataframe with file_name:F240223B.TXT and import_date:2024-02-26 into tOIPPreLog3
+INFO:root:Imported completed
+INFO:root:PySpark connection stopped
+INFO:root:Created spark connection again.
+INFO:root:Creating pandas dataframes from the SQL results for main and secondary reports
+INFO:root:Creating the excel report file.
+INFO:root:Main report written to excel file
+INFO:root:Secondary report written to excel file
+INFO:root:Excel report file saved
+INFO:root:PySpark connection stopped
+INFO:root:Preparing to send successful email
+INFO:root:Report sent
+INFO:root:This is the finally clause.
+INFO:py4j.clientserver:Closing down clientserver connection
